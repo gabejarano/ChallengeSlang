@@ -3,8 +3,8 @@ import {createWord,getWords} from '../controllers/word.controller';
 
 const router = Router();
 
-
-// Post api/words
+//EndPoint para agregar nuevas palabras a la base de datos con su respectiva pronunciación
+// Post api/words {word} 
 router.post('/words', createWord );
 
 //Get api/words

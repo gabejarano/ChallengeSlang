@@ -5,7 +5,6 @@ const morgan = require('morgan');
 const app = express();
 
 
-
 //----------------------Middleware (Exec before call routes)-----------------------------
 
 //Logs in consol

@@ -6,7 +6,7 @@ export async function createWord(req, res) {
     const { word } = req.body
     //Consulta en la Api la pronunciacion de la palabra y la guarda en la base de datos
     await unirest.get("https://wordsapiv1.p.mashape.com/words/"+word)
-        .header("X-Mashape-Key", "45ed4fb452msh00100a67afbd6dcp1ea6afjsn61004ace6df5")
+        .header("X-Mashape-Key", "45ed4fb452msh00100a67afbd6dcp1ea6afjsn61004ace6df5" || process.env.WORDAPI )
         .header("Accept", "application/json")
         .end(function (result) {
             

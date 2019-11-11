@@ -5,7 +5,7 @@
   "main": "index",
   "typings": "index",
   "scripts": {
-    "start": "webpack-dev-server -d"
+    "start": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",

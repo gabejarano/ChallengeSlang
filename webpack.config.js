@@ -33,11 +33,6 @@ module.exports = {
                 ],
               },
             {
-                enforce: 'pre',
-                test: /\.js$/,
-                loader: 'source-map-loader'
-            },
-            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use:{
@@ -52,5 +47,5 @@ module.exports = {
         }),
         new minicssExtractPlugin('style.css')
     ],
-    devtool: 'source-map'
+   
 }

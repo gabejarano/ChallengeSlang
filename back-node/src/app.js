@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
 
 //Initialization
 const app = express();
@@ -12,6 +13,9 @@ app.use(morgan('dev'));
 
 //Server can receive json 
 app.use(express.json());
+
+//enable cors
+app.use(cors());
 
 //----------------------------------------------Routes---------------------------------------------
 

@@ -37,11 +37,31 @@ export async function createWord(req, res) {
 }
 
 export async function getWords(req, res) {
-
-    
-    
     const words = await Word.findAll();
     res.json({
         data: words
     })
 }
+
+export async function getFallas(req, res) {
+    const words = await Word.findAll();
+    const {indice,palabra} = req.params
+    
+
+    let arregloPalabra = words[indice].word
+    let i =0;
+    let enviar=[];
+    while (i<arregloPalabra.length){
+        if(arregloPalabra[i]!=null && palabra[i]!=null && arregloPalabra[i]==palabra[i]){
+            enviar[i]=1;
+        }else{
+            enviar[i]=0; 
+        }
+        i+=1;
+    }
+    res.json({
+        data:enviar
+    })
+    
+}
+

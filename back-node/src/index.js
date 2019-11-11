@@ -5,7 +5,7 @@ import app from './app';
 async function main() {
 
     //--------------------------------------------Settings----------------------------------------------
-    app.set('port', process.env.PORT || 8080);
+    app.set('port', process.env.PORT || 8000);
     
     //Run server express.
     await app.listen(app.get('port'),()=>{

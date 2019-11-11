@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import {createWord,getWords} from '../controllers/word.controller';
+import {createWord,getWords, getFallas} from '../controllers/word.controller';
 
 const router = Router();
 
@@ -9,4 +9,10 @@ router.post('/words', createWord );
 
 //Get api/words
 router.get('/words', getWords);
+
+//Get api/words
+router.get('/words/failures/:indice/:palabra', getFallas);
+
+
 module.exports=router;
+

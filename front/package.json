@@ -2,7 +2,8 @@
   "name": "front",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index",
+  "typings": "index",
   "scripts": {
     "start": "webpack-dev-server -d"
   },
@@ -15,7 +16,9 @@
     "file-loader": "^4.2.0",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "react-say": "^1.2.0",
+    "speak-tts": "^2.0.8"
   },
   "devDependencies": {
     "@types/react": "^16.9.11",

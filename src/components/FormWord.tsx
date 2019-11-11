@@ -29,7 +29,7 @@ export class FormWord extends React.Component<IwordProp, IwordState>{
         if (palabra == word) {
             this.setState({ indice: indice + 1, correcta: true })
         } else {
-            const response = await fetch('http://localhost:8000/api/words/failures/' + indice + '/' + word)
+            const response = await fetch('https://challengeslang.herokuapp.com/api/words/failures/' + indice + '/' + word)
             const responseJson = await response.json();
             let i = 0;
             

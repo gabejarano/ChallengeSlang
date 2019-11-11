@@ -18,7 +18,7 @@ export class App extends React.Component<IProps, Istate>{
     }
 
     async componentDidMount() {
-        const response = await fetch('http://localhost:8000/api/words');
+        const response = await fetch('https://challengeslang.herokuapp.com/api/words');
         const responseJson = await response.json();
         this.setState({ words: responseJson.data });
     }

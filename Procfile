@@ -1,1 +1,1 @@
-web: node build/static/App.js
+web: node bundle.js

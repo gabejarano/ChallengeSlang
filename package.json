@@ -2,10 +2,9 @@
   "name": "front",
   "version": "1.0.0",
   "description": "",
-  "main": "index",
-  "typings": "index",
+  "main": "webpack.config.js"
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server -d --open"
   },
   "author": "",
   "license": "ISC",

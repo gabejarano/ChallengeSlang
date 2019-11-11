@@ -1,9 +1,9 @@
 import Sequalize from 'sequelize';
 
 export const sequelize = new Sequalize (
-    'postgres' || process.env.USERDB,
-    'postgres'|| process.env.USERDB,
-    'Gustavo2018'|| process.env.PASSWORDDB,
+     process.env.USERDB,
+     process.env.USERDB,
+     process.env.PASSWORDDB,
     {
         host:'localhost',
         dialect:'postgres',

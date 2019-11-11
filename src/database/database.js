@@ -1,11 +1,11 @@
 import Sequalize from 'sequelize';
 
 export const sequelize = new Sequalize (
-     process.env.USERDB,
-     process.env.USERDB,
-     process.env.PASSWORDDB,
+    process.env.DB,
+    process.env.USERDB,
+    process.env.PASSWORDDB,
     {
-        host:process.env.DATABASE_URL,
+        host:process.env.HOSTDB,
         dialect:'postgres',
         pool:{
             max:5,

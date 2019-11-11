@@ -5,7 +5,7 @@ export const sequelize = new Sequalize (
      process.env.USERDB,
      process.env.PASSWORDDB,
     {
-        host:'localhost',
+        host:process.env.DATABASE_URL,
         dialect:'postgres',
         pool:{
             max:5,

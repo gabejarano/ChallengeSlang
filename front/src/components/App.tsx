@@ -1,7 +1,6 @@
 import * as React from 'react';
 var Image = require('../assets/images/slang2.svg');
-var correcto = require('../assets/images/correcto.svg');
-var incorrecto = require('../assets/images/Incorrecto.svg');
+
 
 
 
@@ -17,6 +16,7 @@ export class App extends React.Component<IProps, Istate>{
         }
     }
 
+    //get all the words in the DB
     async componentDidMount() {
         const response = await fetch('http://localhost:8000/api/words');
         const responseJson = await response.json();
@@ -24,6 +24,7 @@ export class App extends React.Component<IProps, Istate>{
     }
 
 
+    
     render() {
 
         const { words } = this.state;

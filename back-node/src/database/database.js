@@ -1,5 +1,6 @@
 import Sequalize from 'sequelize';
 
+//conecction of database using sequelize
 export const sequelize = new Sequalize (
     'postgres' || process.env.USERDB,
     'postgres'|| process.env.USERDB,

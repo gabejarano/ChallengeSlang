@@ -19,6 +19,8 @@ export class FormWord extends React.Component<IwordProp, IwordState>{
         }
     }
 
+    //Method tha verify the word.
+    //use the endpoint failures to determine the position of the letter that is wrong in the word.
     async handleConsulta(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         this.setState({ jugando: true });

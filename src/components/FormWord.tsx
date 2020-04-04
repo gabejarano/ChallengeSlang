@@ -71,7 +71,7 @@ export class FormWord extends React.Component<IwordProp, IwordState>{
         const speech = new Speech();
         const { indice } = this.state;
         const { words } = this.props;
-        speech.setLanguage('en-US');
+       
 
         // will throw an exception if not browser supported
         if (speech.hasBrowserSupport()) { // returns a boolean
@@ -80,7 +80,7 @@ export class FormWord extends React.Component<IwordProp, IwordState>{
         
         speech.speak({
 
-            text: words[indice].word,
+            text: "Uribe paraco",
             queue: false, // current speech will be interrupted,
         }).then(() => {
             console.log("Success !")
